@@ -75,7 +75,7 @@ this.$auth.login(/* .... */)
 
 Set user data and update `loggedIn` state.
 
-> **TIP:** This function can be used to set the user using the login response after a successfully login, when [autoFetchUser](../schemes/local.md#autofetchuser) is disabled.
+> **TIP:** This function can be used to set the user using the login response after a successfully login, when [`user.autoFetch`](../schemes/local#autofetch) is disabled.
 
 ```js
 this.$auth.setUser(user)
@@ -162,4 +162,4 @@ export default function({ $auth }) {
 ## tokens
 
 **Token** and **Refresh Token** are available on `$auth.strategy.token` and `$auth.strategy.refreshToken`.
-Both have getters and setters and other helpers. Documented in [tokens.md](./tokens)
+Both have getters and setters and other helpers. Documented in [tokens.md](../tokens)
